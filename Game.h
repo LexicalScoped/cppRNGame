@@ -4,10 +4,13 @@
 class Game
 {
 private:
+	// Configure these variables to adjust the guessing range and number of turns.
 	static const int turns = 10;
-	static const int maxRand = 1000;
+	static const int maxRand = 100;
 	static const int minRand = 1;
 
+
+	// these variables will be used by the engine.
 	int randomNumber;
 	int turnCounter;
 	bool gameState;
