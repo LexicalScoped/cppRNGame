@@ -1,12 +1,13 @@
-#include <stdlib.h> 
-#include <time.h>	
 #include "Game.h"
+#include <random>
 
 int main()
 {
-	srand((int)time(NULL));
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_int_distribution<int> dist(1, 100);
 
-	Game Obj;
+	Game Obj(dist(gen));
 	while (Obj.StatusCheck())
 	{
 		Obj.PrintMain();

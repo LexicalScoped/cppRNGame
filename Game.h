@@ -17,7 +17,7 @@ private:
 	int guesses[turns];
 
 public:
-	Game();
+	Game(int);
 	bool StatusCheck();
 	void PrintMain();
 	int GetAndValidateInput();

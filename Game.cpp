@@ -1,10 +1,9 @@
 #include <iostream> 
-#include <stdlib.h> 
 #include "Game.h"	
 
-Game::Game()
+Game::Game(int randInt)
 {
-	randomNumber = rand() % maxRand + minRand;
+	randomNumber = randInt;
 	turnCounter = turns;
 	gameState = true;
 	for (int i = turns - 1; i >= 0; i--)
