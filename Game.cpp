@@ -1,9 +1,13 @@
 #include <iostream> 
+#include <random>
 #include "Game.h"	
 
-Game::Game(int randInt)
+Game::Game()
 {
-	randomNumber = randInt;
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_int_distribution<int> dist(minRand, maxRand);
+	randomNumber = dist(gen);
 	turnCounter = turns;
 	gameState = true;
 	for (int i = turns - 1; i >= 0; i--)
