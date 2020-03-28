@@ -1,6 +1,6 @@
-#include <iostream> // std::cout, std::endl, std::cin
-#include <stdlib.h> // srand() and rand()
-#include "Game.h"	// Game Header for Game Class.
+#include <iostream> 
+#include <stdlib.h> 
+#include "Game.h"	
 
 Game::Game()
 {

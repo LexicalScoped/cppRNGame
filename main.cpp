@@ -1,6 +1,6 @@
-#include <stdlib.h> // srand() and rand()
-#include <time.h>	// time()
-#include "Game.h"	// Game Class
+#include <stdlib.h> 
+#include <time.h>	
+#include "Game.h"
 
 int main()
 {
