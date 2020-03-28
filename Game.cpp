@@ -75,8 +75,7 @@ int Game::GetAndValidateInput()
 
 void Game::CheckGuess(int guess)
 {
-	turnCounter--;
-	guesses[turnCounter] = guess;
+	guesses[--turnCounter] = guess;
 
 	if (guess > randomNumber) { std::cout << "Your guess (" << guess << ") was higher than the random number" << std::endl; }
 	if (guess < randomNumber) { std::cout << "Your guess (" << guess << ") was lower than the random number" << std::endl; }
